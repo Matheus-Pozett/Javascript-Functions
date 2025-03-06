@@ -5,7 +5,7 @@ const burlId = '0e7b460e-acf4-4e17-bcb3-ee472265db83';
 const stephanieId = '9e7d4524-363c-416a-8759-8aa7e50c0992';
 
 const isManager = (id) => {
-  if (id === '9e7d4524-363c-416a-8759-8aa7e50c0992' || id === olaId || id === burlId) {
+  if (id === stephanieId || id === olaId || id === burlId) {
     return true;
   }
   return false;
@@ -18,7 +18,5 @@ const getRelatedEmployees = (managerId) => {
   }
   throw new Error('O id inserido não é de uma pessoa colaboradora gerente!');
 };
-
-console.log(getRelatedEmployees('9e7d4524-363c-416a-8759-8aa7e50c0992'));
 
 module.exports = { isManager, getRelatedEmployees };
