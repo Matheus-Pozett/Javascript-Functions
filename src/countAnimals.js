@@ -19,6 +19,4 @@ const countAnimals = (animal) => {
   return selectedSpecie.residents.filter((resident) => resident.sex === sex).length;
 };
 
-console.log(countAnimals({ species: 'giraffes' }));
-
 module.exports = countAnimals;

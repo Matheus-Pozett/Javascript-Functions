@@ -8,6 +8,4 @@ const getAnimalsOlderThan = (animal, age) => {
   return animalsOlderThan;
 };
 
-console.log(getAnimalsOlderThan('otters', 7));
-
 module.exports = getAnimalsOlderThan;
